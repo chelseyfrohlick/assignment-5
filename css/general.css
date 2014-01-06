@@ -1,0 +1,355 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.logo{
+	display:block;
+	width:10%;
+	float: left;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right:-15px;
+	
+}
+
+header{
+	overflow:auto;
+}
+
+.nav
+.nav-top{
+	overflow:auto;
+}
+
+.nav ul{
+	overflow:auto;
+}
+
+.welcome {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.5em;
+	font-weight:lighter;
+	margin-bottom: -15px;
+	text-decoration:underline;
+}
+
+
+img{
+	width:80%;
+	display:block;
+	margin: auto auto;
+}
+	
+	
+
+h1 {
+	display: block;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	
+
+}
+
+
+.feature-item{
+	text-align: center;
+	border-top: 1px solid #000;
+	margin-top: 2rem;
+}
+
+
+/* Prices */
+
+.prices-main{
+	padding-left: 1em;
+}
+
+.prices {
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 2.5em;
+	text-decoration: underline;
+}
+
+
+ li{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.prices-main li:nth-of-type(odd) { 
+	background: #eee; 
+}
+
+
+/*schedule*/
+
+strong{
+	font-weight:bold;
+}
+
+h3{
+	font-size: 1.5em;
+}
+
+.schedule-main{
+	padding-left: 1em;
+	padding-bottom: 1em;
+}
+
+.schedule-main h3{
+	background-color:#CCC;
+}
+
+
+.schedule {
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 2.5em;
+	text-decoration:underline;
+}
+
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold;
+  font-size: 20px; 
+}
+td{
+	font-size:15px;
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.schedule-table{
+	display: none;
+}
+
+@media only screen and (min-width: 50em){
+	.schedule-table{
+		display: block;
+	}
+	
+	.schedule-list{
+		display: none;
+	}
+}
+
+/* Nav */
+
+html, body{
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+h1, 
+.main,
+.copyright{
+	width: 90%;
+	margin: 1rem auto;
+}
+
+.hide-text{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.main{
+	padding-top:2rem;
+}
+
+/*sets up and moves nav icon*/
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited{
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 5%;
+	height:40px;
+	width:40px;
+	background: #fff url('../images/nav-icon.svg') no-repeat center center;
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active{
+	background-color: #ccc;
+}
+
+
+/* styles nav links*/
+
+
+.nav a,
+.nav a:link,
+.nav a:visited{
+	display: block;
+	text-align: center;
+	padding:1rem;
+
+	color: #fff;
+	background-color:#000;
+	text-decoration:none;
+	border: 1px solid #fff;
+	
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active{
+	background-color: #333;
+}
+
+
+/*toggle nav css*/
+
+.nav-top{
+	display:none;
+}
+
+.nav-top[data-state="expanded"]{
+	display: block;
+}
+
+ul {
+	width:100%;
+	list-style-type: none;
+}
+
+li { 
+	width:100%;
+	list-style-type: none;
+}
+
+/* media querries */
+
+@media only screen and (min-width: 20em){
+
+h1 { 
+	font-size: 1.3em;
+}
+
+.logo {
+	margin-top: 0;
+}
+}
+
+/* change nav for bigger screen */
+
+@media only screen and (min-width: 35em){
+	
+	header{
+		overflow:auto;
+	}
+	
+	.nav{
+		overflow: auto;
+	}
+	
+	.nav li{
+		float: left;
+		width: 33.33%;
+	}
+	
+	.nav-btn,
+	.nav-btn:link,
+	.nav-btn:visited{
+		display: none;
+	}
+	
+	.nav-top{
+		display: block;
+	}
+	
+	.logo{
+		overflow:auto;
+		width: 3em;
+		margin-top: 2px;
+	}
+}
+
+/* bring header beside logo */
+
+
+	@media only screen and (min-width: 75em){
+	
+	
+	h1{
+		text-align: left;
+	}
+	
+	.main img{
+		float: right;
+		width: 60%;
+		padding: 0 1em;
+	}
+	
+	.main-paragraph{
+		float: left;
+		width: 25%; 
+	}
+	
+	main{
+		overflow: auto;
+	}
+	.logo{
+		overflow:auto;
+	}
+	
+	}
+	
+	
+	
+@media only screen and (min-width: 45em){
+	
+	.feature-item{
+		width: 30.333%;
+		margin: 2rem 1.5% 0;
+		float: left;
+		border: 0;
+	}
+	
+	footer{
+		clear: both;
+	}
+
+}
+
+@media only screen and (min-width: 75em){
+	.feature{
+		clear: both;
+	}
+	
+	.feature-item img{
+		float: none;
+	}
+}
+	
+/* larger screens */
+
+@media only screen and (min-width: 100em){
+	html{ 
+	font-size: 1.5em;
+	}
+	
+	
+
+}
